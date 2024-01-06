@@ -1,0 +1,336 @@
+LIBRARY "tier0.dll"
+EXPORTS
+??0CThread@@QAE@XZ
+??0CThreadEvent@@QAE@PAX@Z ; has WINAPI (@4)
+??0CThreadEvent@@QAE@_N@Z ; has WINAPI (@4)
+??0CThreadFullMutex@@QAE@_NPBD@Z ; has WINAPI (@8)
+??0CThreadLocalBase@@QAE@XZ
+??0CThreadMutex@@QAE@XZ
+??0CThreadRWLock@@QAE@XZ
+??0CThreadSemaphore@@QAE@JJ@Z ; has WINAPI (@8)
+??0CThreadSpinRWLock@@QAE@XZ
+??0CThreadSyncObject@@IAE@XZ
+??0CVProfNode@@QAE@PBDHPAV0@0H@Z ; has WINAPI (@20)
+??0CVProfile@@QAE@XZ
+??0CWorkerThread@@QAE@XZ
+??1CThread@@UAE@XZ
+??1CThreadEvent@@QAE@XZ
+??1CThreadFullMutex@@QAE@XZ
+??1CThreadLocalBase@@QAE@XZ
+??1CThreadMutex@@QAE@XZ
+??1CThreadRWLock@@QAE@XZ
+??1CThreadSemaphore@@QAE@XZ
+??1CThreadSyncObject@@QAE@XZ
+??1CVProfNode@@QAE@XZ
+??1CVProfile@@QAE@XZ
+??1CWorkerThread@@UAE@XZ
+??4CThreadLocalBase@@QAEAAV0@ABV0@@Z ; has WINAPI (@4)
+??4CThreadSpinRWLock@@QAEAAV0@ABV0@@Z ; has WINAPI (@4)
+??4CVProfNode@@QAEAAV0@ABV0@@Z ; has WINAPI (@4)
+??4CVProfile@@QAEAAV0@ABV0@@Z ; has WINAPI (@4)
+??7CThreadSyncObject@@QBE_NXZ
+??BCThreadSyncObject@@QAEPAXXZ
+??_7CThread@@6B@ DATA
+??_7CWorkerThread@@6B@ DATA
+??_FCThreadEvent@@QAEXXZ
+??_FCThreadFullMutex@@QAEXXZ
+?AddBudgetGroupName@CVProfile@@IAEHPBDH@Z ; has WINAPI (@8)
+?AssertOwnedByCurrentThread@CThreadFullMutex@@QAE_NXZ
+?AssertOwnedByCurrentThread@CThreadMutex@@QAE_NXZ
+?AssertUseable@CThreadSyncObject@@IAEXXZ
+?AssignIf@CThreadSpinRWLock@@AAE_NABULockInfo_t@1@0@Z ; has WINAPI (@8)
+?AtRoot@CVProfile@@QBE_NXZ
+?BoostPriority@CWorkerThread@@QAEHXZ
+?BudgetGroupNameToBudgetGroupID@CVProfile@@QAEHPBD@Z ; has WINAPI (@4)
+?BudgetGroupNameToBudgetGroupID@CVProfile@@QAEHPBDH@Z ; has WINAPI (@8)
+?BudgetGroupNameToBudgetGroupIDNoCreate@CVProfile@@QAEHPBD@Z ; has WINAPI (@4)
+?CalcStackDepth@CThread@@QAEIPAX@Z ; has WINAPI (@4)
+?Call@CWorkerThread@@IAEHII_NP6GIHPBQAVCThreadEvent@@HI@Z@Z ; has WINAPI (@16)
+?CallMaster@CWorkerThread@@QAEHII@Z ; has WINAPI (@8)
+?CallWorker@CWorkerThread@@QAEHII_N@Z ; has WINAPI (@12)
+?Check@CThreadEvent@@QAE_NXZ
+?ClearPrevTime@CVProfNode@@QAEXXZ
+?ConColorMsg@@YAXABVColor@@PBDZZ
+?ConLog@@YAXPBDZZ
+?ConMsg@@YAXPBDZZ
+?ConWarning@@YAXPBDZZ
+?CreateSimpleThread@@YAPAUThreadHandle_t__@@P6AIPAX@Z0PAKI@Z
+?DevLog@@YAXPBDZZ
+?DevMsg@@YAXPBDZZ
+?DevWarning@@YAXPBDZZ
+?DisableVTuneGroup@CVProfile@@QAEXXZ
+?DumpNodes@CVProfile@@IAEXPAVCVProfNode@@H_N@Z ; has WINAPI (@12)
+?EnableVTuneGroup@CVProfile@@QAEXPBD@Z ; has WINAPI (@4)
+?EnterScope@CVProfNode@@QAEXXZ
+?EnterScope@CVProfile@@QAEXPBDH0_N@Z ; has WINAPI (@16)
+?EnterScope@CVProfile@@QAEXPBDH0_NH@Z ; has WINAPI (@20)
+?ExitScope@CVProfNode@@QAE_NXZ
+?ExitScope@CVProfile@@QAEXXZ
+?FindBudgetGroupName@CVProfile@@IAEHPBD@Z ; has WINAPI (@4)
+?FindNode@CVProfile@@QAEPAVCVProfNode@@PAV2@PBD@Z ; has WINAPI (@8)
+?FindOrCreateCounter@CVProfile@@QAEPAHPBDW4CounterGroup_t@@@Z ; has WINAPI (@8)
+?FreeNodes_R@CVProfile@@IAEXPAVCVProfNode@@@Z ; has WINAPI (@4)
+?Get@CThreadLocalBase@@QBEPAXXZ
+?GetBudgetGroupColor@CVProfile@@QAEXHAAH000@Z ; has WINAPI (@20)
+?GetBudgetGroupFlags@CVProfile@@QBEHH@Z ; has WINAPI (@4)
+?GetBudgetGroupID@CVProfNode@@QAEHXZ
+?GetBudgetGroupName@CVProfile@@QAEPBDH@Z ; has WINAPI (@4)
+?GetCallHandle@CWorkerThread@@QAEAAVCThreadEvent@@XZ
+?GetCallParam@CWorkerThread@@QBEIXZ
+?GetChild@CVProfNode@@QAEPAV1@XZ
+?GetClientData@CVProfNode@@QBEHXZ
+?GetCounterGroup@CVProfile@@QBE?AW4CounterGroup_t@@H@Z ; has WINAPI (@4)
+?GetCounterName@CVProfile@@QBEPBDH@Z ; has WINAPI (@4)
+?GetCounterNameAndValue@CVProfile@@QBEPBDHAAH@Z ; has WINAPI (@8)
+?GetCounterValue@CVProfile@@QBEHH@Z ; has WINAPI (@4)
+?GetCurCalls@CVProfNode@@QAEHXZ
+?GetCurTime@CVProfNode@@QAENXZ
+?GetCurTimeLessChildren@CVProfNode@@QAENXZ
+?GetCurrentCThread@CThread@@SAPAV1@XZ
+?GetDetailLevel@CVProfile@@QBEHXZ
+?GetHandle@CThreadSyncObject@@QBEQAXXZ
+?GetL2CacheMisses@CVProfNode@@QAEHXZ
+?GetName@CThread@@QAEPBDXZ
+?GetName@CVProfNode@@QAEPBDXZ
+?GetNumBudgetGroups@CVProfile@@QAEHXZ
+?GetNumCounters@CVProfile@@QBEHXZ
+?GetParent@CVProfNode@@QAEPAV1@XZ
+?GetPeakFrameTime@CVProfile@@QAENXZ
+?GetPeakTime@CVProfNode@@QAENXZ
+?GetPrevCalls@CVProfNode@@QAEHXZ
+?GetPrevL2CacheMissLessChildren@CVProfNode@@QAEHXZ
+?GetPrevLoadHitStoreLessChildren@CVProfNode@@QAEHXZ
+?GetPrevSibling@CVProfNode@@QAEPAV1@XZ
+?GetPrevTime@CVProfNode@@QAENXZ
+?GetPrevTimeLessChildren@CVProfNode@@QAENXZ
+?GetPriority@CThread@@QBEHXZ
+?GetResult@CThread@@QAEHXZ
+?GetRoot@CVProfile@@QAEPAVCVProfNode@@XZ
+?GetSibling@CVProfNode@@QAEPAV1@XZ
+?GetSubNode@CVProfNode@@QAEPAV1@PBDH0@Z ; has WINAPI (@12)
+?GetSubNode@CVProfNode@@QAEPAV1@PBDH0H@Z ; has WINAPI (@16)
+?GetThreadHandle@CThread@@QAEPAXXZ
+?GetThreadID@CThread@@IBEQAUThreadHandle_t__@@XZ
+?GetThreadId@CThread@@QAEIXZ
+?GetThreadProc@CThread@@MAEP6GIPAX@ZXZ
+?GetTimeLastFrame@CVProfile@@QAENXZ
+?GetTotalCalls@CVProfNode@@QAEHXZ
+?GetTotalTime@CVProfNode@@QAENXZ
+?GetTotalTimeLessChildren@CVProfNode@@QAENXZ
+?GetTotalTimeSampled@CVProfile@@QAENXZ
+?GetUniqueNodeID@CVProfNode@@ABEHXZ
+?HideBudgetGroup@CVProfile@@QAEXH_N@Z ; has WINAPI (@8)
+?HideBudgetGroup@CVProfile@@QAEXPBD_N@Z ; has WINAPI (@8)
+?Init@CThread@@MAE_NXZ
+?IsAlive@CThread@@QAE_NXZ
+?IsEnabled@CVProfile@@QBE_NXZ
+?Join@CThread@@QAE_NI@Z ; has WINAPI (@4)
+?Lock@CThreadFastMutex@@ACEXII@Z ; has WINAPI (@8)
+?Lock@CThreadFullMutex@@QAEXI@Z ; has WINAPI (@4)
+?Lock@CThreadFullMutex@@QAEXXZ
+?Lock@CThreadMutex@@QAEXXZ
+?Lock@CThreadMutex@@QBEXXZ
+?LockForRead@CThreadRWLock@@QAEXXZ
+?LockForRead@CThreadRWLock@@QBEXXZ
+?LockForRead@CThreadSpinRWLock@@QAEXXZ
+?LockForRead@CThreadSpinRWLock@@QBEXXZ
+?LockForWrite@CThreadRWLock@@QAEXXZ
+?LockForWrite@CThreadRWLock@@QBEXXZ
+?LockForWrite@CThreadSpinRWLock@@QAEXXZ
+?LockForWrite@CThreadSpinRWLock@@QBEXXZ
+?MarkFrame@CVProfNode@@QAEXXZ
+?MarkFrame@CVProfile@@QAEXXZ
+?NumFramesSampled@CVProfile@@QAEHXZ
+?OnExit@CThread@@MAEXXZ
+?OutputReport@CVProfile@@QAEXHPBDH@Z ; has WINAPI (@12)
+?PMEEnable@CVProfile@@QAEX_N@Z ; has WINAPI (@4)
+?PMEInitialized@CVProfile@@QAEX_N@Z ; has WINAPI (@4)
+?Pause@CVProfNode@@QAEXXZ
+?Pause@CVProfile@@QAEXXZ
+?PeekCall@CWorkerThread@@QAE_NPAI@Z ; has WINAPI (@4)
+?PopGroup@CVProfile@@QAEXXZ
+?PushGroup@CVProfile@@QAEXH@Z ; has WINAPI (@4)
+?RegisterNumBudgetGroupsChangedCallBack@CVProfile@@QAEXP6AXXZ@Z ; has WINAPI (@4)
+?Release@CThreadFullMutex@@QAE_NXZ
+?Release@CThreadSemaphore@@QAE_NJPAJ@Z ; has WINAPI (@8)
+?Reply@CWorkerThread@@QAEXI@Z ; Check!!! forwards to SetEvent in KERNEL32.dll (ordinal 790)
+?Reset@CThreadEvent@@QAE_NXZ
+?Reset@CVProfNode@@QAEXXZ
+?Reset@CVProfile@@QAEXXZ
+?ResetCounters@CVProfile@@QAEXW4CounterGroup_t@@@Z ; has WINAPI (@4)
+?ResetPeak@CVProfNode@@QAEXXZ
+?ResetPeaks@CVProfile@@QAEXXZ
+?Resume@CThread@@QAEIXZ
+?Resume@CVProfNode@@QAEXXZ
+?Resume@CVProfile@@QAEXXZ
+?Set@CThreadEvent@@QAE_NXZ
+?Set@CThreadLocalBase@@QAEXPAX@Z ; has WINAPI (@4)
+?SetBudgetGroupID@CVProfNode@@QAEXH@Z ; has WINAPI (@4)
+?SetClientData@CVProfNode@@QAEXH@Z ; has WINAPI (@4)
+?SetCurFrameTime@CVProfNode@@QAEXK@Z ; has WINAPI (@4)
+?SetName@CThread@@QAEXPBD@Z ; has WINAPI (@4)
+?SetPriority@CThread@@QAE_NH@Z ; has WINAPI (@4)
+?SetTrace@CThreadFullMutex@@QAEX_N@Z ; has WINAPI (@4)
+?SetTrace@CThreadMutex@@QAEX_N@Z ; has WINAPI (@4)
+?SetUniqueNodeID@CVProfNode@@AAEXH@Z ; has WINAPI (@4)
+?Sleep@CThread@@SAXI@Z
+?SpinLockForWrite@CThreadSpinRWLock@@AAEXI@Z ; has WINAPI (@4)
+?Start@CThread@@UAE_NI@Z ; has WINAPI (@4)
+?Start@CVProfile@@QAEXXZ
+?Stop@CThread@@QAEXH@Z ; has WINAPI (@4)
+?Stop@CVProfile@@QAEXXZ
+?SumTimes@CVProfile@@IAEXPAVCVProfNode@@H@Z ; has WINAPI (@8)
+?SumTimes@CVProfile@@IAEXPBDH@Z ; has WINAPI (@8)
+?Suspend@CThread@@QAEIXZ
+?Term@CVProfile@@QAEXXZ
+?Terminate@CThread@@QAE_NH@Z ; has WINAPI (@4)
+?ThreadProc@CThread@@CGIPAX@Z ; has WINAPI (@4)
+?TryLock@CThreadMutex@@QAE_NXZ
+?TryLock@CThreadMutex@@QBE_NXZ
+?TryLockForRead@CThreadSpinRWLock@@QAE_NXZ
+?TryLockForRead@CThreadSpinRWLock@@QBE_NXZ
+?TryLockForWrite@CThreadSpinRWLock@@AAE_NI@Z ; has WINAPI (@4)
+?TryLockForWrite@CThreadSpinRWLock@@QAE_NXZ
+?TryLockForWrite@CThreadSpinRWLock@@QBE_NXZ
+?Unlock@CThreadFullMutex@@QAEXXZ
+?Unlock@CThreadMutex@@QAEXXZ
+?Unlock@CThreadMutex@@QBEXXZ
+?UnlockRead@CThreadRWLock@@QAEXXZ
+?UnlockRead@CThreadRWLock@@QBEXXZ
+?UnlockRead@CThreadSpinRWLock@@QAEXXZ
+?UnlockRead@CThreadSpinRWLock@@QBEXXZ
+?UnlockWrite@CThreadRWLock@@QAEXXZ
+?UnlockWrite@CThreadRWLock@@QBEXXZ
+?UnlockWrite@CThreadSpinRWLock@@QAEXXZ
+?UnlockWrite@CThreadSpinRWLock@@QBEXXZ
+?UsePME@CVProfile@@QAE_NXZ
+?VTuneGroupEnabled@CVProfile@@IAE_NXZ
+?VTuneGroupID@CVProfile@@IAEHXZ
+?Wait@CThreadEvent@@QAE_NI@Z ; has WINAPI (@4)
+?Wait@CThreadSyncObject@@QAE_NI@Z ; has WINAPI (@4)
+?WaitForCall@CWorkerThread@@QAE_NIPAI@Z ; has WINAPI (@8)
+?WaitForCall@CWorkerThread@@QAE_NPAI@Z ; has WINAPI (@4)
+?WaitForCreateComplete@CThread@@MAE_NPAVCThreadEvent@@@Z ; has WINAPI (@4)
+?WaitForRead@CThreadRWLock@@AAEXXZ
+?WaitForReply@CWorkerThread@@IAEHIP6GIHPBQAVCThreadEvent@@HI@Z@Z ; has WINAPI (@8)
+?WaitForReply@CWorkerThread@@QAEHI@Z ; has WINAPI (@4)
+?Yield@CThread@@SAXXZ
+?g_bInException@@3_NA DATA
+?oldValue@?4??TryLockForWrite@CThreadSpinRWLock@@AAE_NI@Z@4ULockInfo_t@2@B DATA
+?s_iCurrentUniqueNodeID@CVProfNode@@0HA DATA
+AreAllAssertsDisabled
+AssertValidStringPtr
+COM_TimestampedLog
+CallAssertFailedNotifyFunc
+CatchAndWriteMiniDump
+ColorSpewMessage
+CommandLine_Tier0
+ConColorMsg
+ConDColorMsg
+ConDLog
+ConDMsg
+ConDWarning
+ConLog
+ConMsg
+ConWarning
+CrackSmokingCompiler
+CreateSimpleThread
+DLog
+DMsg
+DWarning
+DeclareCurrentThreadIsMainThread
+DevLog
+DevMsg
+DevWarning
+DoNewAssertDialog
+Error
+GetCPUInformation
+GetCurrentDate
+GetSpewOutputColor
+GetSpewOutputFunc
+GetSpewOutputGroup
+GetSpewOutputLevel
+GetThreadedLoadLibraryFunc
+InitPME
+InstallProgressReportHandler
+Is64BitOS
+IsSpewActive
+Log
+MemAllocScratch
+MemFreeScratch
+Msg
+NetLog
+NetMsg
+NetWarning
+Plat_Alloc
+Plat_DebugString
+Plat_FastVerifyHardwareKey
+Plat_FloatTime
+Plat_Free
+Plat_GetCommandLine ; Check!!! forwards to GetCommandLineA in KERNEL32.dll (ordinal 272)
+Plat_GetCommandLineA ; Check!!! forwards to GetCommandLineA in KERNEL32.dll (ordinal 272)
+Plat_GetCurrentThreadID ; Check!!! forwards to GetCurrentThreadId in KERNEL32.dll (ordinal 326)
+Plat_GetMemPageSize
+Plat_GetPagedPoolInfo
+Plat_IsInBenchmarkMode
+Plat_IsInDebugSession
+Plat_MSTime
+Plat_Realloc
+Plat_RegisterThread ; Check!!! forwards to GetCurrentThreadId in KERNEL32.dll (ordinal 326)
+Plat_SetAllocErrorFn
+Plat_SetBenchmarkMode
+Plat_SetThreadName
+Plat_SimpleLog
+Plat_VerifyHardwareKey
+Plat_VerifyHardwareKeyDriver
+Plat_VerifyHardwareKeyPrompt
+Plat_ctime
+Plat_gmtime
+Plat_localtime
+ReleaseThreadHandle
+ReportProgress
+RunTSListTests
+RunTSQueueTests
+SetAllAssertsDisabled
+SetAssertFailedNotifyFunc
+SetMiniDumpFunction
+SetThreadedLoadLibraryFunc
+SetupWin32ConsoleIO
+ShouldUseNewAssertDialog
+ShutdownPME
+SpewActivate
+SpewOutputFunc
+ThreadGetCurrentHandle ; Check!!! forwards to GetCurrentThread in KERNEL32.dll (ordinal 325)
+ThreadGetPriority
+ThreadInMainThread
+ThreadInterlockedAssignIf64
+ThreadInterlockedCompareExchange64
+ThreadInterlockedDecrement64
+ThreadInterlockedExchange64
+ThreadInterlockedExchangeAdd64
+ThreadInterlockedIncrement64
+ThreadJoin
+ThreadSetAffinity
+ThreadSetDebugName
+ThreadSetPriority
+ThreadSleep
+ThreadWaitForObjects ; Check!!! Couldn't determine function argument count. Function doesn't return. 
+Warning
+WriteMiniDump
+WriteMiniDumpUsingExceptionInfo
+_AssertValidReadPtr
+_AssertValidReadWritePtr
+_AssertValidWritePtr
+_DSpewMessage
+_ExitOnFatalAssert ; Check!!! Couldn't determine function argument count. Function doesn't return. 
+_SpewInfo
+_SpewMessage
+g_ClockSpeed DATA
+g_ClockSpeedMicrosecondsMultiplier DATA
+g_ClockSpeedMillisecondsMultiplier DATA
+g_ClockSpeedSecondsMultiplier DATA
+g_VProfCurrentProfile DATA
+g_dwClockSpeed DATA
+g_pMemAlloc DATA
+g_pVCR DATA
+vtune

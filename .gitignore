@@ -1,0 +1,3 @@
+zig-out/
+zig-cache/
+tier0.lib
