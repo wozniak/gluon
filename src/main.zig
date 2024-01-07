@@ -4,9 +4,16 @@ const w = std.os.windows;
 export const NvOptimusEnablement: u32 = 1;
 export const AmdPowerXpressRequestHighPerformance: u32 = 1;
 
-const LauncherMain = *const fn (?w.HINSTANCE, ?w.HINSTANCE, ?w.LPSTR, c_int) callconv(.C) c_int;
+const LauncherMain = *const fn (
+    ?w.HINSTANCE,
+    ?w.HINSTANCE,
+    ?w.LPSTR,
+    c_int,
+) callconv(.C) c_int;
 
-extern "kernel32" fn SetDllDirectoryW(lpPathName: [*:0]const u16) callconv(w.WINAPI) w.BOOL;
+extern "kernel32" fn SetDllDirectoryW(
+    lpPathName: [*:0]const u16,
+) callconv(w.WINAPI) w.BOOL;
 
 pub fn setDllDirectory(path: []const u8) !void {
     const path_w = try w.sliceToPrefixedFileW(null, path);
@@ -17,7 +24,7 @@ pub fn setDllDirectory(path: []const u8) !void {
 
 pub fn main() !void {
     _ = try setDllDirectory("bin");
-    var modDll = try std.DynLib.open("gluon.dll");
+    var modDll = try std.DynLib.open("libgluon.dll");
     const gluonInit = modDll.lookup(*const fn () callconv(.C) bool, "gluonInit").?;
 
     if (!gluonInit()) return;

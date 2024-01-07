@@ -1,1 +1,1 @@
-pub const Init = @import("features/Init.zig");
+pub var core = @import("features/Core.zig"){};

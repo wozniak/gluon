@@ -4,7 +4,7 @@ const w = std.os.windows;
 const ev = @import("events.zig");
 const features = @import("features.zig");
 
-export fn gluonInit() callconv(.C) bool {
+export fn gluonInit() bool {
     init() catch |err| {
         std.log.err("{}", .{err});
         return false;
@@ -13,15 +13,15 @@ export fn gluonInit() callconv(.C) bool {
 }
 
 fn init() !void {
-    // @breakpoint();
     // early init features
     inline for (@typeInfo(features).Struct.decls) |decl| {
-        const T = @field(features, decl.name);
-        if (@hasDecl(T, "earlyInit")) {
-            if (@field(T, "earlyInit")()) |_| {
-                std.log.info("Early init: {s}", .{@field(T, "DESCRIPTION")});
+        const feature = &@field(features, decl.name);
+        const Feature = @TypeOf(feature.*);
+        if (@hasDecl(Feature, "earlyInit")) {
+            if (feature.earlyInit()) |_| {
+                std.log.info("Early init: {s}", .{Feature.description});
             } else |e| {
-                std.log.err("Early init FAILED: {s}: {}", .{ @field(T, "DESCRIPTION"), e });
+                std.log.err("Early init FAILED: {s}: {}", .{ Feature.description, e });
             }
         }
     }
